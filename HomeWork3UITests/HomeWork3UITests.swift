@@ -1,8 +1,8 @@
 //
-//  HomeWork3UITests.swift
-//  HomeWork3UITests
+//  CounterUITests.swift
+//  CounterUITests
 //
-//  Created by Феликс Титов on 22.01.2021.
+//  Created by Felix Titov on 22.01.2021.
 //
 
 import XCTest

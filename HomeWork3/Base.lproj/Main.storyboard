@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,11 +14,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-dd-ISg">
+                                <rect key="frame" x="136.5" y="260" width="47" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tap"/>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DFf-wJ-Leq"/>
+                                </connections>
+                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3li-OQ-AT1">
-                                <rect key="frame" x="0.0" y="35" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
                                 <items>
                                     <navigationItem title="Counter" id="ylV-Vs-RW9">
                                         <barButtonItem key="leftBarButtonItem" title="reset" id="A4y-PY-yHF">
@@ -29,33 +39,24 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6u-Ik-Zcd">
-                                <rect key="frame" x="179" y="237" width="56" height="110"/>
+                                <rect key="frame" x="20" y="106" width="280" height="110"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="92"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-dd-ISg">
-                                <rect key="frame" x="183.5" y="433" width="47" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="kE7-oE-OIo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Tap"/>
-                                <connections>
-                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DFf-wJ-Leq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YwN-dd-ISg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ey-Ea-Pa1"/>
-                            <constraint firstItem="3li-OQ-AT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="54f-RC-08H"/>
-                            <constraint firstItem="YwN-dd-ISg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Bp-D8-Kts"/>
-                            <constraint firstItem="YwN-dd-ISg" firstAttribute="top" secondItem="v6u-Ik-Zcd" secondAttribute="bottom" constant="86" id="ZTC-dC-F0X"/>
-                            <constraint firstItem="YwN-dd-ISg" firstAttribute="centerX" secondItem="3li-OQ-AT1" secondAttribute="centerX" id="d9v-te-DKv"/>
-                            <constraint firstItem="3li-OQ-AT1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-9" id="pL6-1i-WNj"/>
-                            <constraint firstItem="YwN-dd-ISg" firstAttribute="centerX" secondItem="v6u-Ik-Zcd" secondAttribute="centerX" id="r0T-MG-gzL"/>
+                            <constraint firstItem="3li-OQ-AT1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2h-H0-ebt"/>
+                            <constraint firstItem="3li-OQ-AT1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gdd-Pa-cZg"/>
+                            <constraint firstItem="v6u-Ik-Zcd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gib-Ng-HFN"/>
+                            <constraint firstItem="3li-OQ-AT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jdq-tI-c2B"/>
+                            <constraint firstItem="YwN-dd-ISg" firstAttribute="top" secondItem="v6u-Ik-Zcd" secondAttribute="bottom" constant="44" id="NWl-ZB-2zs"/>
+                            <constraint firstItem="YwN-dd-ISg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ety-fG-cWv"/>
+                            <constraint firstItem="YwN-dd-ISg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ktW-Dw-Thv"/>
+                            <constraint firstItem="v6u-Ik-Zcd" firstAttribute="top" secondItem="3li-OQ-AT1" secondAttribute="bottom" constant="62" id="r86-ES-sM0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v6u-Ik-Zcd" secondAttribute="trailing" constant="20" id="uIF-To-phL"/>
                         </constraints>
                     </view>
                     <connections>

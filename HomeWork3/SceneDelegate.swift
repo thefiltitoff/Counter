@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  HomeWork3
+//  Counter
 //
-//  Created by Феликс Титов on 22.01.2021.
+//  Created by Felix Titov on 22.01.2021.
 //
 
 import UIKit
